@@ -24,6 +24,11 @@
 ### Figures
 1. Worldwide distribution of PIRs
 
+### ERA5 Masks
+1. Mean land temperature in atleast 3 months of the year is subzero. 
+2. Population of the region atleast ?
+3. Glacial lake masks
+4. Altitude of the region atleast ?
 
 ## References
 1. Wilhelm Furian, Fabien Maussion and Christoph Schneider, Projected 21st century glacial lake evolution in High Mountain Asia, https://www.frontiersin.org/articles/10.3389/feart.2022.821798/abstract
