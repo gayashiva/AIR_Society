@@ -26,9 +26,9 @@
 
 ### ERA5 Masks
 1. Mean land temperature in atleast 3 months of the year is subzero. 
-2. Population of the region atleast ?
+2. Population of the region atleast ? Use [GPWv4](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4) for global population. 
 3. Glacial lake masks
-4. Altitude of the region atleast ?
+4. Altitude (or air humidity?) of the region atleast ?
 
 ## References
 1. Wilhelm Furian, Fabien Maussion and Christoph Schneider, Projected 21st century glacial lake evolution in High Mountain Asia, https://www.frontiersin.org/articles/10.3389/feart.2022.821798/abstract
