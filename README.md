@@ -12,27 +12,36 @@
 1. Potential GLOFs ranked based on risk and PIR potential.
 
 ## Option 2
-Select coordinates based on "favourable" climate and "sufficient" water supply.
-
-1. Obtain mean winter temperature, wind speed and humidity of these locations to calculate mean freezing rates.
-2. Obtain mean summer temperature, wind speed, humidity and solar radiation of these locations to calculate mean melting rates. This would require a simplified SEB to be applied at a global scale. No fancy calibration. 
-3. Use demand index (DI) and supply index (SI) from [Immerzeel et al. (2019)](https://doi.org/10.1038/s41586-019-1822-y). Regions with a high DI and with low SI would be excellent candidates. However, we should find a threshold/criteria for the water supply. SIs include four different factors for water availability: surface water (L), glacier (G), snow (G) and precipitation (P). I think we should target regions with high/medium L, G and S and low P. If we cross these with areas with a high DI, we will target areas where the use of AIRs would be very suitable. Then, by crossing this with the results of the previous analysis of climate suitability we should be able to identify the suitable areas for AIRs. 
-4. Select favourable locations which can sustain Perpetual Ice Reservoirs (PIRs)
+1. Use estimated survival duration and maximum ice volume to create AIR Index (AI) for a given
+   location.
+2. Intersect AI with demand index (DI) and supply index (SI) from [Immerzeel et al.
+   (2019)](https://doi.org/10.1038/s41586-019-1822-y) to create AIR Suitability Index (ASI). 
+3. Select favourable locations which can sustain Perpetual Ice Reservoirs (PIRs)
 
 ### Key questions
-1. How to define favourable sites using historical weather and location information? 
-2. How to locate water resources near these sites ? SIs can be an easy solution. 
-3. Define a suitability index, based on: (1) climate, (2) water reservoirs and (3) population.
+1. **How to define an AIR index (AI) from winter and summer energy balance estimates?** 
+    * We have to derive a representative winter and summer energy balance. The winter EB is indicative of the freezing rate or maximum ice volume expected and the summer EB is a proxy for the survival duration or the melting rate expected. 
 
-### Figures
-1. Worldwide distribution of suitable regions for PIRs
+2. **How to use SIs and DIs in combination with AI to quantify the AIR Suitability Index (ASI)?**
+    * Regions with a high DI and with low SI would be excellent candidates. However, we should find a
+threshold/criteria for the water supply. SIs include four different factors for water availability: surface
+water (L), glacier (G), snow (G) and precipitation (P). I think we should target regions with high/medium L, G
+and S and low P. If we cross these with areas with a high DI, we will target areas where the use of AIRs would
+be very suitable. Then, by crossing this with the results of the previous analysis of climate suitability we
+should be able to identify the suitable areas for AIRs.
 
 ### Data for analysis
 1. ERA5: 
-        (a) Mean land temperature in at least 3 months of the year is subzero. 
-        (b) Altitude (or air humidity?) of the region atleast ?
-2. The easiest option would be to use SIs from Immerzeel et al. (2019). An alternative, to go into more detail would be to use inventories of glacial lakes. These products are only available per region. Andes: Central and Patagonian Andes - [Wilsont et al. (2018)](https://doi.org/10.1016/j.gloplacha.2018.01.004), Peruvian Andes - [Wood et al. (2021)](https://doi.org/10.1016/j.gloplacha.2021.103574). High Mountain Asia: [Wang et al. (2020)](https://doi.org/10.5194/essd-2019-212). 
-3. Population-wise, the easiest option would be to use DIs from Immerzeel et al. (2019). If we want to make our own calculations and to produce results at a higher spatia resolution we could use [GPWv4](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4) for global population.  
+    (a) Mean land temperature in at least 3 months of the year is subzero. 
+    (b) Altitude (or air humidity?) of the region atleast ?
+2. The easiest option would be to use SIs from Immerzeel et al. (2019). An alternative, to go into more detail
+   would be to use inventories of glacial lakes. These products are only available per region. Andes: Central
+   and Patagonian Andes - [Wilsont et al. (2018)](https://doi.org/10.1016/j.gloplacha.2018.01.004), Peruvian
+   Andes - [Wood et al. (2021)](https://doi.org/10.1016/j.gloplacha.2021.103574). High Mountain Asia: [Wang et
+   al. (2020)](https://doi.org/10.5194/essd-2019-212). 
+3. Population-wise, the easiest option would be to use DIs from Immerzeel et al. (2019). If we want to make our
+   own calculations and to produce results at a higher spatia resolution we could use
+   [GPWv4](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4) for global population.  
 
 ## References
 1. Wilhelm Furian, Fabien Maussion and Christoph Schneider, Projected 21st century glacial lake evolution in High Mountain Asia, https://www.frontiersin.org/articles/10.3389/feart.2022.821798/abstract
