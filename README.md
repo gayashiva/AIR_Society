@@ -4,7 +4,7 @@
 2. Intersect AI with demand index (DI) and supply index (SI) from [Immerzeel et al.
    (2019)](https://doi.org/10.1038/s41586-019-1822-y) to create AIR Suitability Index (ASI).
 
-### Key questions
+# Key questions
 1. **How to define an AIR index (AI) from winter and summer energy balance estimates?** 
     * We have to derive a representative winter and summer energy balance. The winter EB is indicative of the freezing rate or maximum ice volume expected and the summer EB is a proxy for the survival duration or the melting rate expected. 
 
@@ -16,7 +16,7 @@ and S and low P. If we cross these with areas with a high DI, we will target are
 be very suitable. Then, by crossing this with the results of the previous analysis of climate suitability we
 should be able to identify the suitable areas for AIRs.
 
-### Data for analysis
+# Data for analysis
 1. ERA5: 
     (a) Mean land temperature in at least 3 months of the year is subzero. 
     (b) Altitude (or air humidity?) of the region atleast ?
