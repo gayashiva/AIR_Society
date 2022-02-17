@@ -1,20 +1,25 @@
 # Workflow steps
-1. Use estimated survival duration and maximum ice volume to create AIR Index (AI) for a given
-   location.
+1. Use representative winter and summer EB to create AIR Index (AI) for a given location.
 2. Intersect AI with demand index (DI) and supply index (SI) from [Immerzeel et al.
    (2019)](https://doi.org/10.1038/s41586-019-1822-y) to create AIR Suitability Index (ASI).
 
 # Key questions
 1. **How to define an AIR index (AI) from winter and summer energy balance estimates?** 
-    * We have to derive a representative winter and summer energy balance. The winter EB is indicative of the freezing rate or maximum ice volume expected and the summer EB is a proxy for the survival duration or the melting rate expected. 
+    * We have to derive a representative winter (WEB) and summer energy balance (SEB) using historical weather
+      data. The winter EB is indicative of the freezing rate or maximum ice volume expected and the summer EB is
+      a proxy for the survival duration or the melting rate expected.  For example, AI = -(WEB + SEB). High AI
+      either means large AIRs (High WEB) or long lasting AIRs (Low SEB). We could also compare this index using
+      Ladakh's and Swiss WEB and SEB. We can define favourable locations as AI_{Swiss} <= AI_{location}.
+      Additionally, locations that also satisfy AI_{location} <=AI_{Swiss} can be categorised as Perrenial Ice
+      Reservoirs (PIRs).
 
 2. **How to use SIs and DIs in combination with AI to quantify the AIR Suitability Index (ASI)?**
     * Regions with a high DI and with low SI would be excellent candidates. However, we should find a
-threshold/criteria for the water supply. SIs include four different factors for water availability: surface
-water (L), glacier (G), snow (G) and precipitation (P). I think we should target regions with high/medium L, G
-and S and low P. If we cross these with areas with a high DI, we will target areas where the use of AIRs would
-be very suitable. Then, by crossing this with the results of the previous analysis of climate suitability we
-should be able to identify the suitable areas for AIRs.
+      threshold/criteria for the water supply. SIs include four different factors for water availability:
+      surface water (L), glacier (G), snow (G) and precipitation (P). I think we should target regions with
+      high/medium L, G and S and low P. If we cross these with areas with a high DI, we will target areas where
+      the use of AIRs would be very suitable. Then, by crossing this with the results of the previous analysis
+      of climate suitability we should be able to identify the suitable areas for AIRs.
 
 # Data for analysis
 1. ERA5: 
