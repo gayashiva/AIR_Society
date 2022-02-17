@@ -21,7 +21,15 @@
       the use of AIRs would be very suitable. Then, by crossing this with the results of the previous analysis
       of climate suitability we should be able to identify the suitable areas for AIRs.
 
-# Data for analysis
+3. **How to constrain ERA5 grid points for simulations?**
+    * Use Randolph Glacier Inventory (RGI) to capture all suitable areas near glacial water source.
+    * Use ? to capture all suitable areas near surface water.
+    * Use population criterion 
+
+## Next Steps
+1. Calculate AI for Ladakh using ERA5 data. Produce freezing rate, evaporation-precipitation plot. (Surya)  
+
+## Data for analysis
 1. ERA5: 
     (a) Mean land temperature in at least 3 months of the year is subzero. 
     (b) Altitude (or air humidity?) of the region atleast ?
