@@ -1,22 +1,8 @@
 # Workflow steps
-## Option 1
-1. List coordinates of glacial lakes (GL) worldwide (Furian et al 2022).
-2. Obtain mean winter temperature, wind speed and humidity of these locations to calculate mean freezing rates.
-3. Obtain mean summer temperature, wind speed, humidity and solar radiation of these locations to calculate mean melting rates.
-4. Select GLs which can sustain Perpetual Ice Reservoirs (PIRs)
-
-### Key questions
-1. When does PIR meltwater become greater than the associated glacier meltwater ?
-
-### Figures
-1. Potential GLOFs ranked based on risk and PIR potential.
-
-## Option 2
 1. Use estimated survival duration and maximum ice volume to create AIR Index (AI) for a given
    location.
 2. Intersect AI with demand index (DI) and supply index (SI) from [Immerzeel et al.
-   (2019)](https://doi.org/10.1038/s41586-019-1822-y) to create AIR Suitability Index (ASI). 
-3. Select favourable locations which can sustain Perpetual Ice Reservoirs (PIRs)
+   (2019)](https://doi.org/10.1038/s41586-019-1822-y) to create AIR Suitability Index (ASI).
 
 ### Key questions
 1. **How to define an AIR index (AI) from winter and summer energy balance estimates?** 
