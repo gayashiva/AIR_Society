@@ -14,7 +14,8 @@
       Reservoirs (PIRs).
     * Another possibility is to define AI from temperature and altitude. In the figure below, the distribution
       of expected freezing rate during winter nights is shown. Note that this estimation assumes a constant wind
-      speed (2 m/s), humidity (50%) and cloudiness(0.5).
+      speed (2 m/s), humidity (50%) and cloudiness(0.5). The Swiss (Guttannen) and Indian (Gangles) location are
+      highlighted based on their mean winter temperature and altitude.
 
 ![AIR Index](figs/alt_temp.png)
 
