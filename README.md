@@ -4,7 +4,7 @@
    (2019)](https://doi.org/10.1038/s41586-019-1822-y) to create AIR Suitability Index (ASI).
 
 # Key questions
-1. **How to define an AIR index (AI) from winter and summer energy balance estimates?** 
+1. **How to define an AIR index (AI) ?** 
     * We have to derive a representative winter (WEB) and summer energy balance (SEB) using historical weather
       data. The winter EB is indicative of the freezing rate or maximum ice volume expected and the summer EB is
       a proxy for the survival duration or the melting rate expected.  For example, AI = -(WEB + SEB). High AI
@@ -12,6 +12,11 @@
       Ladakh's and Swiss WEB and SEB. We can define favourable locations as AI_{Swiss} <= AI_{location}.
       Additionally, locations that also satisfy AI_{location} <=AI_{Swiss} can be categorised as Perrenial Ice
       Reservoirs (PIRs).
+    * Another possibility is to define AI from temperature and altitude. In the figure below, the distribution
+      of expected freezing rate during winter nights is shown. Note that this estimation assumes a constant wind
+      speed (2 m/s), humidity (50%) and cloudiness(0.5).
+
+![AIR Index](figs/alt_temp.png)
 
 2. **How to use SIs and DIs in combination with AI to quantify the AIR Suitability Index (ASI)?**
     * Regions with a high DI and with low SI would be excellent candidates. However, we should find a
