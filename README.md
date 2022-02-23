@@ -12,12 +12,6 @@
       Ladakh's and Swiss WEB and SEB. We can define favourable locations as AI_{Swiss} <= AI_{location}.
       Additionally, locations that also satisfy AI_{location} <=AI_{Swiss} can be categorised as Perrenial Ice
       Reservoirs (PIRs).
-    * Another possibility is to define AI from temperature and altitude. In the figure below, the distribution
-      of expected freezing rate during winter nights is shown. Note that this estimation assumes a constant wind
-      speed (2 m/s), humidity (50%) and cloudiness(0.5). The Swiss (Guttannen) and Indian (Gangles) location are
-      highlighted based on their mean winter temperature and altitude.
-
-![AIR Index](figs/alt_temp.png)
 
 2. **How to use SIs and DIs in combination with AI to quantify the AIR Suitability Index (ASI)?**
     * Regions with a high DI and with low SI would be excellent candidates. However, we should find a
