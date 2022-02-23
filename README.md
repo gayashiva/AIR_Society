@@ -22,9 +22,14 @@
       of climate suitability we should be able to identify the suitable areas for AIRs.
 
 3. **How to constrain ERA5 grid points for simulations?**
-    * Use Randolph Glacier Inventory (RGI) to capture all suitable areas near glacial water source.
-    * Use ? to capture all suitable areas near surface water.
-    * Use population criterion 
+    * Use Randolph Glacier Inventory (RGI):
+    * > (1) Identify which ERA5 grid cells have glaciers in
+    * > (2) Compute long-term mean Precip (P) - Evap (E) for each month in each of these 'glacier' cells
+    * > (3) Estimate temperature at the glacier area-weighted mean terminus elevation within the glacier cells (using a lapse rate adjustment)
+    * > (4) Estimate positive-degree-day (PDD) sum and melt (M) from the mean monthly temperature in (3) 
+    * > (5) Compute P - E + M   for an estimate of monthly runoff (R). Months when R is negative would potentially benefit from an AIR
+    * > (6) Repeat (3) and (4) for lower elevations within the glacier cells. Find the elevation that maximises M in months of negative R, subject to the constraint that freezing conditions are also 'common' at this elevation (e.g., mean temp in 3 months <0C).
+    This gets us potentially suitable regions. We can combine with population estimates to identify need. 
 
 ## Next Steps
 1. Calculate AI for Ladakh using ERA5 data. Produce freezing rate, evaporation-precipitation plot. (Surya)  
